@@ -113,14 +113,10 @@ body {
   overscroll-behavior: none
 }
 .wrapper {
-  position: relative;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  max-width: 1080px;
-  margin: auto;
-  background-color: #fff
+  overflow: hidden
 }
 @supports (overflow:clip) {
   .wrapper {
@@ -163,4 +159,31 @@ body {
 .ibg--contain {
   -o-object-fit: contain;
   object-fit: contain
+}
+.title__label {
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 200%;
+  letter-spacing: .625em;
+  text-transform: uppercase;
+  color: #656d72;
+  display: flex;
+  align-items: center;
+  gap: 1rem
+}
+.title__label::before {
+  content: "";
+  width: 1rem;
+  height: .125rem;
+  background-color: #d9d9d9
+}
+.title__label:not(:last-child) {
+  margin-bottom: .75em
+}
+.title__value {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 125%;
+  color: #232e35
 }
