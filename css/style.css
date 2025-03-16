@@ -1,5 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:400,500&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:500,700&display=swap);
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url(../fonts/icons.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal
+}
+[class*=_icon-]::before {
+  font-family: icons;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+._icon-link:before {
+  content: ""
+}
+._icon-s-github:before {
+  content: ""
+}
+._icon-s-instagram:before {
+  content: ""
+}
+._icon-slider-arrow:before {
+  content: ""
+}
+._icon-s-linkedin:before {
+  content: ""
+}
+._icon-s-twitter:before {
+  content: ""
+}
 * {
   padding: 0;
   margin: 0;
@@ -20,10 +55,10 @@ html {
   min-width: 320px
 }
 body {
-  color: #000;
+  color: #232e35;
   line-height: 1;
   font-family: Inter;
-  font-size: .875rem;
+  font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -84,7 +119,6 @@ body {
   flex-direction: column;
   overflow: hidden;
   max-width: 1080px;
-  border-radius: 20px;
   margin: auto;
   background-color: #fff
 }
@@ -100,9 +134,9 @@ body {
   min-width: 0
 }
 [class*=__container] {
-  max-width: 67.5rem;
+  max-width: 76.875rem;
   margin: 0 auto;
-  padding: 0 3.75rem
+  padding: 0 .9375rem
 }
 .ibg {
   width: 100%;
